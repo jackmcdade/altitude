@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altitude Video | Commerical Aerial Videography in Upstate New York</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    .burns-effect {
+        animation-name: burns;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    @keyframes burns {
+        from { transform: scale3d(1, 1, 1); }
+        to {transform: scale3d(1.1, 1.1, 1.1); }
+    }
+
+    .fit-cover { object-fit: cover; }
+
+    .fit-contain { object-fit: contain; }
+    </style>
+</head>
+<body class="font-sans bg-cover h-screen relative antialiased bg-black">
+    <img class="w-full h-full fit-cover absolute burns-effect" src="https://images.unsplash.com/photo-1510266400690-5c9f4d2b602c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=089a3aa04e66f9b16b8e178379cbd924&auto=format&fit=crop&w=2550&q=80" alt="">
+    <div class="opacity-50 bg-black absolute pin h-full w-full"></div>
+    <div class="relative z-10 text-center h-full w-full font-light text-xl" style="padding-top: 120px">
+        <img src="logo.svg" height="60" class="mx-auto">
+        <p class="text-white mt-6">Commerical Aerial Videography in Upstate New York</p>
+    </div>
+</body>
+</html>
